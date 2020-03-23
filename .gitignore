@@ -11,3 +11,6 @@ logs/
 Desktop.ini         # Windows directory atttributes
 Thumbs.db           # Windows picture thumbnail cache
 .DS_Store           # Mac OSX directory attributes
+
+venv/               # virtualenvs don't go in repos
+
