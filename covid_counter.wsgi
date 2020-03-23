@@ -1,1 +1,1 @@
-from covid_count import app as application
+from covid_counter import app as application

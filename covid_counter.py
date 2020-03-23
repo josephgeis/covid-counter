@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-covid_count
+covid_counter
 Joseph Geis (@juniorrubyist)
 
 [description]
