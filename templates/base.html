@@ -3,6 +3,7 @@
 <head>
     {% block metahead %}
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% endblock %}
     {% block head %}
     <title>{% block title %}{% endblock %} | COVID Counter</title>
@@ -14,7 +15,7 @@
 </head>
 <body>
     {% block content %}{% endblock %}
-    <p>This website does not constitute recommended health advice.<br />Please consult with your local authorities and reputable news sources for the latest relevant COVID-19 information.</p>
+    <p>This website does not constitute recommended health advice.<br />Please consult with your local authorities and reputable news sources for the latest relevant <span style="white-space: nowrap;">COVID-19</span> information.</p>
     <p>An open source project by Joseph Geis :)<br /><span class="nav-links"><a href="/">Home</a> | <a href="#">GitHub</a></span></p>
 </body>
 </html>

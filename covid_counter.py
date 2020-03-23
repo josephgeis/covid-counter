@@ -41,4 +41,4 @@ def page_not_found(error):
 
 # Run dev server
 if __name__ == '__main__':
-    app.run('localhost', port=8080, debug=True)
+    app.run('0.0.0.0', port=8080, debug=True)
