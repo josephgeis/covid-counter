@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" class="{% block color_scheme %}t-default{% endblock %}">
+<head>
+    {% block metahead %}
+    <meta charset="utf-8" />
+    {% endblock %}
+    {% block head %}
+    <title>{% block title %}{% endblock %} | COVID Counter</title>
+    {% block favicon %}
+    <link rel="stylesheet" href="{{ static('style.css') }}" />
+    {% endblock %}
+
+    {% endblock %}
+</head>
+<body>
+    {% block content %}{% endblock %}
+    <p>This website does not constitute recommended health advice.<br />Please consult with your local authorities and reputable news sources for the latest relevant COVID-19 information.</p>
+    <p>An open source project by Joseph Geis :)<br /><span class="nav-links"><a href="/">Home</a> | <a href="#">GitHub</a></span></p>
+</body>
+</html>

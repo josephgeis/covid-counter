@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h1 class="main-title">COVID Counter</h1>
+<div class="locales">
+    <h2>Select your locale</h2>
+    <ul class="locale-select">
+        {% for scraper in scrapers %}
+        <li><a href="/{{ scraper[0] }}">{{ scraper[1] }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+$colors:
+    "default" #fff #000,
+    "dark" #212529 #fff,
+    "orange" #fd7e14 #fff;
+
+@each $name, $bg-color, $fg-color in $colors {
+    .t-#{$name} {
+        background-color: $bg-color;
+        color: $fg-color;
+
+        & a {
+            color: $fg-color;
+        }
+    }
+}

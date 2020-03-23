@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800,900&display=swap");
+.t-default, html {
+  background-color: #fff;
+  color: #000;
+}
+.t-default a, html a {
+  color: #000;
+}
+
+.t-dark {
+  background-color: #212529;
+  color: #fff;
+}
+.t-dark a {
+  color: #fff;
+}
+
+.t-orange {
+  background-color: #fd7e14;
+  color: #fff;
+}
+.t-orange a {
+  color: #fff;
+}
+
+html {
+  display: flex;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1.main-title {
+  font-size: 3.5rem;
+}
+
+ul.locale-select {
+  list-style: none;
+  padding: 0;
+}
+ul.locale-select li a {
+  text-decoration: none;
+}
+
+h1.big-number {
+  font-weight: 900;
+  font-size: 200px;
+  margin: 0;
+}
+
+.your-locale {
+  font-weight: 800;
+}
+
+a {
+  font-weight: 700;
+}
+a:hover {
+  font-weight: 800;
+}
+
+/*# sourceMappingURL=style.css.map */

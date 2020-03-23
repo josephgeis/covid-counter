@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}COVID-19 Cases in {{ scraper.locale_name }}{% endblock %}
+
+{% block color_scheme %}{{ scraper.color_scheme }}{% endblock %}
+
+{% block content %}
+<h1 class="big-number">
+    {{ scraper.number_of_cases }}
+</h1>
+<h2>confirmed cases of COVID-19 in<br /><span class="your-locale">{{ scraper.locale_name }}</span></h2>
+{% endblock %}
