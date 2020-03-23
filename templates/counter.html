@@ -8,5 +8,5 @@
 <h1 class="big-number">
     {{ scraper.number_of_cases }}
 </h1>
-<h2>confirmed cases of COVID-19 in<br /><span class="your-locale">{{ scraper.locale_name }}</span></h2>
+<h2>confirmed cases of COVID-19 in<br /><span class="your-locale">{{ scraper.locale_name }}</span> {% if scraper.source_url %}<small><a href="{{ scraper.source_url }}">(source)</a></small> {% endif %}</h2>
 {% endblock %}

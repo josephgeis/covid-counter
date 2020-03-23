@@ -41,6 +41,11 @@ class CA_OC_Scraper(BaseScraper):
     def color_scheme(self): return "t-orange"
 
 
+    @property
+    def source_url(self):
+        return "https://www.ochealthinfo.com/phs/about/epidasmt/epi/dip/prevention/novel_coronavirus"
+
+
     def __init__(self, fetch=True):
         if fetch: self.page = requests.get('https://www.ochealthinfo.com/phs/about/epidasmt/epi/dip/prevention/novel_coronavirus')
 
