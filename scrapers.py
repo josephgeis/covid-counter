@@ -32,7 +32,7 @@ class CA_OC_Scraper(BaseScraper):
         page = self.page
         tree = html.fromstring(page.content)
 
-        xpath = "//table[2]/tbody/tr[4]/td[2]"
+        xpath = "//html/body/div/div[3]/div/section/main/div/article/div/div/table/tbody/tr[4]/td[2]/strong"
 
         return tree.xpath(xpath)[0].text
 
@@ -43,11 +43,11 @@ class CA_OC_Scraper(BaseScraper):
 
     @property
     def source_url(self):
-        return "https://www.ochealthinfo.com/phs/about/epidasmt/epi/dip/prevention/novel_coronavirus"
+        return "https://occovid19.ochealthinfo.com/coronavirus-in-oc"
 
 
     def __init__(self, fetch=True):
-        if fetch: self.page = requests.get('https://www.ochealthinfo.com/phs/about/epidasmt/epi/dip/prevention/novel_coronavirus')
+        if fetch: self.page = requests.get(self.source_url)
 
 
 SCRAPERS = {
