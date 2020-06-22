@@ -32,8 +32,8 @@ class CA_OC_Scraper(BaseScraper):
         page = self.page
         tree = html.fromstring(page.content)
 
-        xpath = "//html/body/div/div[3]/div/section/main/div/article/div/div/table/tbody/tr[4]/td[2]/strong"
-
+        xpath = "//html/body/div[1]/div[3]/div/section/main/div/article/div/div/div[1]/div/div[2]/div[1]/div/div[2]/h1"
+        
         return tree.xpath(xpath)[0].text
 
 
@@ -63,3 +63,4 @@ def get(scraper):
 
 def available():
     return [(sid, s(fetch=False).locale_name) for (sid, s) in SCRAPERS.items()]
+
