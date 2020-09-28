@@ -32,9 +32,9 @@ class CA_OC_Scraper(BaseScraper):
         page = self.page
         tree = html.fromstring(page.content)
 
-        xpath = "//html/body/div[1]/div[3]/div/section/main/div/article/div/div/div[1]/div/div[2]/div[1]/div/div[2]/h1"
+        xpath = "//h3[@class='casecount-panel-title']/text()"
         
-        return tree.xpath(xpath)[0].text
+        return tree.xpath(xpath)[0]
 
 
     @property
